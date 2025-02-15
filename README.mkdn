@@ -1,0 +1,20 @@
+Atiga GMS
+=========
+
+Getting started
+---------------
+
+To use this gms, you need clone it:
+```
+git clone -b android-15 --single-branch --depth=1 https://github.com/Atiga-Stuff/vendor_gms.git vendor/gms
+```
+
+Sincs this repo use git LFS, then you need run it in directory you've been clone it:
+```
+git lfs pull
+```
+
+Then you need include it:
+```
+$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
+```
