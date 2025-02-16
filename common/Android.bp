@@ -2,3 +2,17 @@ soong_namespace {
 	imports: [
 	],
 }
+
+dex_import {
+	name: "com.google.android.dialer.support",
+	owner: "gms",
+	jars: ["proprietary/product/framework/com.google.android.dialer.support.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.google.android.maps",
+	owner: "gms",
+	jars: ["proprietary/product/framework/com.google.android.maps.jar"],
+	product_specific: true,
+}
