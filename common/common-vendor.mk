@@ -30,3 +30,23 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.google.android.dialer.support \
     com.google.android.maps
+
+# GmsCore
+PRODUCT_COPY_FILES += \
+    vendor/gms/common/proprietary/product/etc/permissions/com.google.android.gms.xml:$(TARGET_COPY_OUT_PROUCT)/etc/permissions/com.google.android.gms.xml
+
+PRODUCT_PACKAGES += \
+    AndroidPlatformServices \
+    MlkitBarcodeUIPrebuilt \
+    PrebuiltGmsCore \
+    PrebuiltGmsCoreVic_AdsDynamite.uncompressed \
+    PrebuiltGmsCoreVic_CronetDynamite.uncompressed \
+    PrebuiltGmsCoreVic_DynamiteLoader.uncompressed \
+    PrebuiltGmsCoreVic_DynamiteModulesA.uncompressed \
+    PrebuiltGmsCoreVic_DynamiteModulesC.uncompressed \
+    PrebuiltGmsCoreVic_GoogleCertificates.uncompressed \
+    PrebuiltGmsCoreVic_MapsDynamite.uncompressed \
+    PrebuiltGmsCoreVic_MeasurementDynamite.uncompressed \
+    VisionBarcodePrebuilt
+
+include vendor/gms/common/overlays.mk

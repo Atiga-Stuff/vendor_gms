@@ -3,6 +3,169 @@ soong_namespace {
 	],
 }
 
+android_app_import {
+	name: "AndroidPlatformServices",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/m/independent/AndroidPlatformServices.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "MlkitBarcodeUIPrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/m/optional/MlkitBarcodeUIPrebuilt.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PrebuiltGmsCore",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCoreVic.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PrebuiltGmsCoreVic_AdsDynamite.uncompressed",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/app_chimera/m/PrebuiltGmsCoreVic_AdsDynamite.uncompressed.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PrebuiltGmsCoreVic_CronetDynamite.uncompressed",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/app_chimera/m/PrebuiltGmsCoreVic_CronetDynamite.uncompressed.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PrebuiltGmsCoreVic_DynamiteLoader.uncompressed",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/app_chimera/m/PrebuiltGmsCoreVic_DynamiteLoader.uncompressed.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PrebuiltGmsCoreVic_DynamiteModulesA.uncompressed",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/app_chimera/m/PrebuiltGmsCoreVic_DynamiteModulesA.uncompressed.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PrebuiltGmsCoreVic_DynamiteModulesC.uncompressed",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/app_chimera/m/PrebuiltGmsCoreVic_DynamiteModulesC.uncompressed.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PrebuiltGmsCoreVic_GoogleCertificates.uncompressed",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/app_chimera/m/PrebuiltGmsCoreVic_GoogleCertificates.uncompressed.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PrebuiltGmsCoreVic_MapsDynamite.uncompressed",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/app_chimera/m/PrebuiltGmsCoreVic_MapsDynamite.uncompressed.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PrebuiltGmsCoreVic_MeasurementDynamite.uncompressed",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/app_chimera/m/PrebuiltGmsCoreVic_MeasurementDynamite.uncompressed.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "VisionBarcodePrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/m/optional/VisionBarcodePrebuilt.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+  name: "GmsCoreOverlay",
+  owner: "gms",
+  apk: "proprietary/product/overlay/GmsCoreOverlay.apk",
+  product_specific: true
+}
+
 dex_import {
 	name: "com.google.android.dialer.support",
 	owner: "gms",
